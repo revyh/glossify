@@ -10,6 +10,7 @@
       }
     }
   },
+  "postCreateCommand": "pip install --upgrade pip && pip install numpy==1.23.5 && pip install spacy==3.5.3 && pip install -e . && python -m spacy download en_core_web_sm",
   "containerEnv": {
     "PYTHONIOENCODING": "utf-8",
     "LANG": "C.UTF-8"
